@@ -1,0 +1,79 @@
+/* Header styling */
+.header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 0;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .nav-bar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-bar-links li {
+    margin: 0;
+  }
+  
+  .nav-bar-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+  
+  .nav-bar-links a:hover {
+    color: var(--secondary);
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: var(--btn-padding);
+    border: 2px solid var(--primary);
+    border-radius: var(--btn-border-radius);
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: var(--btn-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative; /* Needed for ::before and ::after positioning */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  }
+  
+  
+  
+  .btn::before {
+    border-top: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+  }
+  
+  .btn::after {
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+  }
+  
+  .btn:hover::before,
+  .btn:hover::after {
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+  

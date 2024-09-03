@@ -1,0 +1,17 @@
+.heading-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 900px;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .movie-counter {
+    font-size: 1rem;
+    color: white;
+    background: var(--secondary);
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  

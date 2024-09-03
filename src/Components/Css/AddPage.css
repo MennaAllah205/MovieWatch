@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
+/* CSS custom variables */
+:root {
+  --primary: black;
+  --secondary: red;
+  --white: white;
+  --btn-padding: 10px 15px; /* Custom variable for button padding */
+  --btn-border-radius: 5px; /* Custom variable for button border radius */
+  --btn-font-size: 16px; /* Custom variable for button font size */
+  --input-padding: 10px; /* Custom variable for input padding */
+  --input-border-radius: 5px; /* Custom variable for input border radius */
+  --input-border-color: var(--primary); /* Input border color */
+}
+
+/* Container styling */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%; /* Adjust width for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Adjust width for small screens */
+    padding: 10px; /* Reduce padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* Full width for very small screens */
+    padding: 5px; /* Further reduce padding for very small screens */
+  }
+}
+
+/* Add Page styling */
+.add-page {
+  background-color: var(--white);
+  color: var(--primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.add-content {
+  max-width: 600px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: var(--btn-border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: var(--input-padding);
+  border: 2px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  font-size: var(--btn-font-size);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-container input::placeholder {
+  color: var(--primary);
+  opacity: 0.6; /* Placeholder text opacity */
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+}
+
+.results li {
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  border-radius: var(--input-border-radius);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.results li:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}

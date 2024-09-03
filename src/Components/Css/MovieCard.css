@@ -1,0 +1,66 @@
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+    margin-top: 15px;
+}
+
+/* Individual movie card styling */
+.movie-card {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Slightly increases size on hover */
+}
+
+/* Movie poster styling */
+.movie-poster img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Movie info container */
+.movie-info {
+    padding: 12px;
+}
+
+/* Title styling */
+.heading .title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Release date styling */
+.release-date {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Button controls styling */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+.controls button {
+    background: #333; /* Dark gray background */
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
